@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/ui.css">
+</head>
+
+<body>
+<section class="barbershop">
+  <div class="barbershop-container">
+    <nav class="menu" onclick="myFunction(this)">
+     <div class="bar1"></div>
+	 <div class="bar2"></div>
+	 <div class="bar3"></div>
+    </nav>
+    <div class="barbershop-heading">Barbershop</div>
+    <div class="barbershop-buttons">
+      <button class="btn">Shop Now</button>
+      <button class="btn btn-active">Read More</button>
+    </div>
+    <div class="barbershop-phone"><a href="tel:+78127030202">+7 (812) 703 02 02</a></div>
+    <div class="switch-container">
+      <div class="switch-label">Hairstyle</div>
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch"></label>
+      </div>
+      <div class="switch-label">Beard</div>
+    </div>
+  </div>
+</section>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+
+</script>
+</body>
+</html>

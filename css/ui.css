@@ -1,0 +1,178 @@
+@import url("normalize.css");
+@import url("animate.css");
+.barbershop {
+  background-image: -moz-linear-gradient(-85deg, #358ac7 0%, #7474bf 100%);
+  background-image: -webkit-linear-gradient(-85deg, #358ac7 0%, #7474bf 100%);
+  background-image: -ms-linear-gradient(-85deg, #358ac7 0%, #7474bf 100%);
+  padding: 40px; }
+
+.barbershop-container {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  margin: 30px auto;
+  width: 60%;
+  padding: 20% 40px;
+  position: relative;
+  border-radius: 10px;
+  background: url("../img/barber.jpeg") center center no-repeat;
+  background-size: cover;
+  box-shadow: 0px 26px 59.94px 21.06px rgba(0, 0, 0, 0.48);
+  overflow: hidden; }
+  .barbershop-container:after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.8;
+    background-image: -webkit-linear-gradient(bottom, #317eb5 0%, #00e5d3 98%);
+    background-image: -o-linear-gradient(bottom, #317eb5 0%, #00e5d3 98%);
+    background-image: linear-gradient(to top, #317eb5 0%, #00e5d3 98%); }
+
+.barbershop-heading {
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  left: 0;
+  top: 40%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 4vw;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  width: 100%; }
+
+.barbershop-buttons {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  left: 0; }
+
+.switch-container {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  z-index: 2; }
+
+.switch-label {
+  display: inline-block;
+  font-size: 0.9em;
+  margin: 0 5px;
+  letter-spacing: 1px; }
+
+.onoffswitch {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  top: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.onoffswitch-checkbox {
+  display: none; }
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 20px;
+  padding: 0;
+  line-height: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in; }
+  .onoffswitch-label:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    background-image: -moz-linear-gradient(-90deg, white 0%, #dedddd 100%);
+    background-image: -webkit-linear-gradient(-90deg, white 0%, #dedddd 100%);
+    background-image: -ms-linear-gradient(-90deg, white 0%, #dedddd 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in 0s; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #fff; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px;
+  background-image: -moz-linear-gradient(-90deg, white 0%, #dedddd 100%);
+  background-image: -webkit-linear-gradient(-90deg, white 0%, #dedddd 100%);
+  background-image: -ms-linear-gradient(-90deg, white 0%, #dedddd 100%);
+  box-shadow: -4px 1px 10px 1px rgba(0, 0, 0, 0.2); }
+
+.barbershop-phone {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: 2; }
+  .barbershop-phone > a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px; }
+
+.btn {
+  border-radius: 30px;
+  padding: 7px 25px;
+  text-align: center;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 30px 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); }
+  .btn:focus {
+    outline: none; }
+  .btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #09c; }
+  .btn:active {
+    background: rgba(255, 255, 255, 0.8);
+    color: #09c;
+    box-shadow: inset 0px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3); }
+  .btn.btn-active {
+    background: #fff;
+    color: #09c; }
+    .btn.btn-active:hover {
+      background: #09c;
+      border-color: #09c;
+      color: #fff; }
+
+.menu {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2; }
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.4s; }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-2px, -3px);
+  transform: rotate(45deg) translate(-2px, -3px); }

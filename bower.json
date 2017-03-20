@@ -1,0 +1,21 @@
+{
+  "name": "practice1",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ANAKUC"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^5.0.0",
+    "animate.css": "^3.5.2"
+  }
+}
